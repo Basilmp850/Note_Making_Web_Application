@@ -1,0 +1,53 @@
+.searchbook-assist{
+  padding-bottom:50px;
+  /* text-align: left; */
+
+}
+.title{
+    color: black;
+    font-size: 50px;
+    padding-top: 5px;
+    transform: translateX(-10px);
+}
+.iconimage{
+  height: 70px;
+  padding-left: 10px;
+  text-align:left;
+  transform: translateY(-40px);
+  transform: translateX(40px);
+}
+
+.sendbtn{
+    background-color: black;
+    color:beige;
+    align-items: center;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 150px;
+    /* transform: translateY(150px); */
+    
+}
+#selected-content{
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:20px;
+  font-size:20px;
+}
+
+
+#sendata{
+  align-items: center;
+  text-align: center;
+  
+}
+
+.sendbtn:hover{
+  background-color: white;
+  color:black;
+}
+
+
+

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>HTML DOM range cloneContents() method</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>GeeksforGeeks</h1>
+     
+<p>This is the Range Content</p>
+ 
+    <button onclick="clone()">Click To Clone Contents</button>
+</body>
+<script>
+$(window).mouseup(function() {
+    alert(getSelectedText());
+});
+
+function getSelectedText() {
+    if (window.getSelection) {
+        return window.getSelection().toString();
+    } else if (document.selection) {
+        return document.selection.createRange().text;
+    }
+    return '';
+   }
+</script>
+</html>

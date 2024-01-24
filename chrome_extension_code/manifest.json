@@ -1,0 +1,39 @@
+{
+    "manifest_version":3,
+    "name":"Jons extension",
+    "description":"Add a custom background to google",
+    "version":"1.0",
+    
+    "background":{
+         "service_worker": "background.js"
+    },
+    "permissions":[
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+    "icons": {
+        "128": "/images/searchbook_logo128.png"
+},
+"action":{
+    "default_icon":{
+        "128":"/images/searchbook_logo128.png"
+    },
+    "default_popup":"popup.html"
+},
+"content_scripts":[
+    {
+        "matches": [
+            "http://*/*", "https://*/*"
+        ],
+   "js":["script.js"]
+}
+],
+"web_accessible_resources": [
+    {
+        "resources":["script.js"],
+        "matches": ["<all_urls>"]
+    }
+]
+
+}

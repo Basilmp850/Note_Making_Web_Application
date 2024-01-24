@@ -1,0 +1,3 @@
+node_modules/
+chrome_extension_code/node_modules/
+.env
